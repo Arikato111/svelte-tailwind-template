@@ -9,3 +9,8 @@ npm install
 npm run dev
 ```
 
+
+- [ ] Not lazy
+- [ ] More components
+- [ ] Beautifull front-end
+- [ ] responsive
