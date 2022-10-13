@@ -3,7 +3,7 @@
   <img align="center" alt="Svelte" height="30" width="40" src="https://github.com/devicons/devicon/raw/master/icons/tailwindcss/tailwindcss-plain.svg">
 </p>
 
-# Svelte + vite + Tailwindcss 
+# <p align="center">Svelte + vite + Tailwindcss </p>
 
 ## $template$
 
