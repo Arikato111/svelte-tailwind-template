@@ -1,0 +1,20 @@
+/* Write your global styles here, in PostCSS syntax */
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer components {
+  .main-screen {
+    @apply border-4 border-green-400 min-h-screen flex justify-center items-center flex-col box-border;
+  }
+
+  .btn-green {
+    @apply bg-green-400 p-2 rounded text-white focus:outline-none shadow-md shadow-slate-300 active:translate-y-2 active:shadow-none transition-all;
+  }
+  .btn-red {
+    @apply bg-rose-400 p-2 rounded text-white focus:outline-none shadow-md shadow-slate-300 active:translate-y-2 active:shadow-none transition-all;
+  }
+}

@@ -1,7 +1,6 @@
-<script>
-  export let count = 0;
-  function randomCount() {
-    console.log(Math.random() * 2);
+<script lang="ts">
+  export let count: number = 0;
+  function randomCount(): void {
     if (Math.random() * 2 > 1) {
       count += Math.floor(Math.random() * 20);
     } else {
@@ -10,30 +9,16 @@
   }
 </script>
 
-<main class="border-4 border-green-400">
+<main class="main-screen">
   <h1 class="p-10 text-4xl title">Svelte + vite + Tailwindcss</h1>
   {#if count >= 0}
-    <button
-      class="bg-green-400 p-2 rounded text-white focus:outline-none shadow-md shadow-slate-300 active:translate-y-2 active:shadow-none transition-all"
-      on:click={randomCount}>Count: {count}</button
-    >
+    <button class="btn-green" on:click={randomCount}>Count: {count}</button>
   {:else}
-    <button
-      class="bg-rose-400 p-2 rounded text-white focus:outline-none shadow-md shadow-slate-300 active:translate-y-2 active:shadow-none transition-all"
-      on:click={randomCount}>Count: {count}</button
-    >
+    <button class="btn-red" on:click={randomCount}>Count: {count}</button>
   {/if}
 </main>
 
 <style>
-  main {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-sizing: border-box;
-  }
   .title {
     animation: roling ease 10s infinite;
   }
