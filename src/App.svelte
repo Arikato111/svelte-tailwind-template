@@ -11,7 +11,7 @@
 </script>
 
 <main class="main-screen">
-  <h1 class="p-10 text-4xl title">Svelte + vite + Tailwindcss</h1>
+  <h1 class="p-10 text-2xl sm:text-4xl title">Svelte + vite + Tailwindcss</h1>
   {#if count >= 0}
     <button class="btn-green" on:click={randomCount}>Count: {count}</button>
   {:else}
