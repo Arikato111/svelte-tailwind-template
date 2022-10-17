@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Footer from "./components/Footer.svelte";
   export let count: number = 0;
   function randomCount(): void {
     if (Math.random() * 2 > 1) {
@@ -17,6 +18,7 @@
     <button class="btn-red" on:click={randomCount}>Count: {count}</button>
   {/if}
 </main>
+<Footer />
 
 <style>
   .title {
