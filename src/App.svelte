@@ -1,5 +1,9 @@
 <script lang="ts">
+  import ToggleMode from "./components/ToggleMode.svelte";
   import Footer from "./components/Footer.svelte";
+  import { checkTheme } from "./components/CheckMode";
+  checkTheme();
+
   export let count: number = 0;
   function randomCount(): void {
     if (Math.random() * 2 > 1) {
@@ -11,11 +15,12 @@
 </script>
 
 <main class="main-screen">
+  <ToggleMode />
   <h1 class="p-10 text-2xl sm:text-4xl title">Svelte + vite + Tailwindcss</h1>
   {#if count >= 0}
-    <button class="btn-green" on:click={randomCount}>Count: {count}</button>
+    <button class="btn bg-green-400 dark:bg-green-600 dark:hover:bg-green-500" on:click={randomCount}>Count: {count}</button>
   {:else}
-    <button class="btn-red" on:click={randomCount}>Count: {count}</button>
+    <button class="btn bg-rose-400 dark:bg-rose-600 dark:hover:bg-rose-500" on:click={randomCount}>Count: {count}</button>
   {/if}
 </main>
 <Footer />

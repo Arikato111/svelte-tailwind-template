@@ -8,13 +8,10 @@
 
 @layer components {
   .main-screen {
-    @apply border-4 border-green-400 min-h-screen flex justify-center items-center flex-col box-border;
+    @apply border-4 border-green-400 dark:border-blue-900 dark:bg-slate-900 dark:text-white min-h-screen flex justify-center items-center flex-col box-border;
   }
 
-  .btn-green {
-    @apply bg-green-400 p-2 rounded text-white focus:outline-none shadow-md shadow-slate-300 active:translate-y-2 active:shadow-none transition-all;
-  }
-  .btn-red {
-    @apply bg-rose-400 p-2 rounded text-white focus:outline-none shadow-md shadow-slate-300 active:translate-y-2 active:shadow-none transition-all;
+  .btn {
+    @apply p-2 rounded text-white focus:outline-none shadow-md dark:shadow-lg shadow-slate-400 dark:shadow-slate-600 active:translate-y-2 active:shadow-none transition-all;
   }
 }
